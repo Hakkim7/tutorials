@@ -1,0 +1,340 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  html {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .weather {
+    border: 1px solid black;
+    width: 600px;
+    height: 435px;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 0;
+    border-top: 0;
+    background: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+  }
+  
+  form {
+    border: 1px solid black;
+    max-width: 600px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+  }
+  .added_location {
+    border: 1px solid black;
+    padding: 1px 0 50px 18px;
+    width: 300px;
+    height: 50px;
+    border-top: none;
+    border-left: 0;
+    border-right: 0;
+  }
+  
+  .weather_temperature {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 435px;
+    width: 299px;
+    border-top: 0;
+  }
+  ul {
+    list-style-type: none;
+    /*margin-right: 60px;*/
+  }
+  input {
+    outline: none;
+    border: none;
+    font-size: medium;
+    height: 45px;
+    padding: 11px 0 13px 16px;
+    width: 550px;
+    background: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+  }
+
+  .text_addloc {
+    width: 302px;
+    display: flex;
+    align-self: baseline;
+    height: 100%;
+  }
+  
+  .weather_temperature_main {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  
+  .button_weather {
+    border-top: 1px solid black;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttonss {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 0; 
+    flex: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background:   #246fa8;
+  }
+  .href {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  
+  .buttonss:hover{
+    background: transparent;
+    border-color: #57c1eb;
+  }
+  
+  .month {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100%;
+    /*margin-top: 74px;*/
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+  .temperature {
+    width: 150px;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 45px;
+    margin-left: 10px;
+    
+  }
+  h2 {
+    margin-top: 1px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    font-size: 70px;
+    line-height: 82px;
+    margin: 0%;
+    
+  }
+  h3 {
+    font-weight: normal;
+  }
+  
+  .search {
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    background: none;
+    
+  }
+  .cloud_one {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heart {
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: min-content;
+    width: min-content;
+    display: flex;
+    padding-right: 5px;
+  }
+  
+  .heart_tab {
+    width: 22px;
+    height: 22px;
+    border-radius: 25%;
+  }
+  .heart_tab:active {
+    background-color: red;
+  }
+  .ul {
+    padding-left: 0px;
+  }
+  
+  .tabs-content {
+    height: 355px;
+    width: 298.5px;
+    overflow: hidden;
+  }
+  li {
+    list-style-type: none;
+    
+  }
+  .city {
+    font-size: 24px;
+    padding-left: 40px;
+  }
+  .city_forecast {
+    font-size: 24px;
+    padding-left: 12px;
+    margin-bottom: 2px;
+  }
+  
+  
+  .weather-info {
+    list-style-type: none;
+    padding-left: 40px;
+    margin-bottom: 70px;
+  }
+  p {
+    height: 28px;
+    font-style: normal;
+    font-size: 24px;
+  }
+  
+  .closeButton{
+    cursor: pointer;
+    margin-right: 20px;
+    background: url(delete.png)50% 50% no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+  .city_list {
+    display: flex;
+    flex-direction: column-reverse;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .city_list > li {
+    display: flex;
+    align-items: center;
+    justify-content:   space-between;;
+  }
+  
+  .city_name {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 14px;
+    cursor: pointer;
+  }
+  
+  #details-page {
+    padding-top: 20px;
+  }
+  
+  .weather-info__forecast-tab-info li {
+    position: relative;
+
+    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    width: 17rem;
+    height: 8rem;
+    list-style-type: none;
+    border: 1px solid black;
+}
+  .weather-info__forecast-tab-city {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+  .weather-info__forecast-tab-info {
+   
+    height: 280px;
+    overflow-y: scroll;
+  }
+  .weather-info__forecast-tab-info-date {
+    position: absolute;
+  
+    width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+  
+    left: 0.5rem;
+    top: 0.25rem;
+    
+  }
+  .weather-info__forecast-tab-info-time {
+    position: absolute;
+  
+    width: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+  
+    right: 0.5rem;
+    top: 0.25rem;
+  
+    text-align: right;
+  }
+  .weather-info__forecast-tab-info-temperature {
+    position: absolute;
+  
+    width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+  
+    left: 0.5rem;
+    top: 4.5rem;
+  }
+  .weather-info__forecast-tab-info-feels {
+    position: absolute;
+  
+    width: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+  
+    left: 0.5rem;
+    top: 6rem;
+  }
+  .weather-info__forecast-tab-info-type {
+    position: absolute;
+  
+    width: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+  
+    right: 0.5rem;
+    top: 4.5rem;
+  
+    text-align: right;
+  }
+  .weather-info__forecast-tab-info-img {
+    margin-right: 12px;
+    position: absolute;
+  
+    width: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    right: 0.2rem;
+    top: 5rem;
+  
+    text-align: right;
+  }
+  
+  .weather-info__forecast-tab-info-img img {
+    width: 3rem;
+    
+  }

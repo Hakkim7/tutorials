@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="searchForm">
+      <input class="input" type="text" placeholder="Enter city" id="inputText"/>
+      <button class="search" id="searchButton">
+        
+          <img src="search_icon.svg" alt="Поиск" class="search-icon"/>
+      </button>
+    </form>
+    <div class="weather">
+      <div class="weather_temperature_main">
+        <div class="weather_temperature">
+          <div class="tabs-content">
+            <ul class="ul">
+              <li id="now-page">
+                <div class="temperature">
+                  <h2 class="degrees"> 0 &#176;</h2>
+                </div>
+                <div class="cloud_one">
+                 <img src="http://openweathermap.org/img/wn/02d@4x.png" alt="Облако" class="cloud" />
+                </div>
+  
+                <div class="month">
+                  <button class="heart" type="button">
+                    <img
+                      src="like_icon.svg"
+                      alt="Сердце"
+                      class="heart_tab"
+                    />
+                  </button>
+                  <p class="city_now"></p>
+                </div>
+              </li>
+              <li id="details-page">
+                <h3 class="city"></h3>
+                <div class="weather-info">
+                  <p class="info-temp">Temperature:</p>
+                  <p class="info-feels">Feels like:</p>
+                  <p class="info-weather">Weather:</p>
+                  <p class="info-sunrise">Sunrise:</p>
+                  <p class="info-sunset">Sunset:</p>
+                </div>
+              </li>
+              
+                <h3 class="city_forecast">Labinsk</h3>
+                <li id="forecast-page">
+                  <ul class="weather-info__forecast-tab-info" id="forecastTabInfoBlocks"></ul>
+              </li>
+             
+            </ul>
+          </div>
+          <div class="button_weather">
+            <button class="buttonss">
+              <a href="#now-page" class="href">Now</a>
+            </button>
+            <button class="buttonss">
+              <a href="#details-page" class="href">Details</a>
+            </button>
+            <button class="buttonss">
+              <a href="#forecast-page" class="href">Forecast</a>
+            </button>
+          </div>
+        </div>
+        <div class="added_location">
+          <p>Added Location:</p>
+          <ul class="city_list" id="addedLocations">
+          
+        </ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+   
+  </body>
+</html>
